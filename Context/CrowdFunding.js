@@ -100,9 +100,15 @@ export const CrowdFundingProvider = ({ children }) => {
     const signer = provider.getSigner();
     const contract = fetchContract(signer);
 
-    const campaignData = await contract.donateToCampaign(pId, {
-      value: ethers.utils.parseEther(amount),
-    });
+    const campaignData = await contract.donateToCampaign(
+      pId,
+      {
+        value: ethers.utils.parseEther(amount),
+      },
+      {
+        gasLimit: 300000,
+      }
+    );
 
     await campaignData.wait();
     location.reload();

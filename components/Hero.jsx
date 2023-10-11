@@ -19,13 +19,13 @@ const Hero = ({ titleData, createCampaign }) => {
     }
     return (
         <div className="relative">
-            {/* <span className="coverLine">
+            <span className="coverLine"></span>
                 <img 
                   src = "https://images.pexels.com/photos/3228766/pexels-photo-3228766.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
                   className="absolute inset-0 object-cover w-full h-full" 
                   alt=""
                 />
-            </span> */}
+            
             <div className="relative bg-opacity-75 backgroundMain">
                 <ICON />
                 <div className="relative px-4 py-16 mx-auto overflow-hidden sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">

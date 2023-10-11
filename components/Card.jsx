@@ -37,6 +37,7 @@ const Card = ({ allcampaign, setOpenModel, setDonate, title }) => {
                      </a>
                      <p className="mb-4 text-gray-700">{campaign.description}</p>
                      <div className="flex space-x-4">
+                        <p className="font-semibold"> Target: {campaign.target} Eth</p>
                         <p className="font-semibold">
                            Raised: {campaign.amountCollected} Eth
                         </p>
