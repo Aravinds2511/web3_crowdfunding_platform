@@ -32,7 +32,10 @@ export const CrowdFundingProvider = ({ children }) => {
         title,
         description,
         ethers.utils.parseUnits(amount, 18),
-        new Date(deadline).getTime()
+        new Date(deadline).getTime(),
+        {
+          gasLimit: 300000,
+        }
       );
 
       await transaction.wait();

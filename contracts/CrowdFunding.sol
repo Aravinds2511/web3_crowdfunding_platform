@@ -26,7 +26,7 @@ contract CrowdFunding {
         Campaign storage campaign = campaigns[numberOfCampaigns];
 
         require(
-            campaign.deadline > block.timestamp,
+            campaign.deadline < block.timestamp,
             "The deadline should be a date in the future"
         );
 

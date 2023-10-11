@@ -20,7 +20,7 @@ const Card = ({ allcampaign, setOpenModel, setDonate, title }) => {
                  className="cursor-pointer border overflow-hidden transition-shadow duration-300 bg-white rounded">
                  
                  <img 
-                    src="// https://images.pexels.com/photos/932638/pexels-photo-932638.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
+                    src="https://images.pexels.com/photos/932638/pexels-photo-932638.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
                     className="object-cover w-full h-64 rounded"
                     alt=""
                   />  

@@ -54,7 +54,7 @@ const Hero = ({ titleData, createCampaign }) => {
                                 <form>
                                     <div className="mb-1 sm:mb-2">
                                         <label 
-                                           htmlFor="firstName"
+                                        //    htmlFor="firstName"
                                            className="inline-block mb-1 font-medium">
                                             Title
                                         </label>
@@ -69,13 +69,13 @@ const Hero = ({ titleData, createCampaign }) => {
                                         required
                                         type="text"
                                         className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
-                                        id="firstName"
-                                        name="firstName"
+                                        // id="firstName"
+                                        // name="firstName"
                                         />
                                     </div>
                                     <div className="mb-1 sm:mb-2">
                                         <label 
-                                           htmlFor="lastName"
+                                        //    htmlFor="lastName"
                                            className="inline-block mb-1 font-medium">
                                             Description
                                         </label>
@@ -90,13 +90,13 @@ const Hero = ({ titleData, createCampaign }) => {
                                         required
                                         type="text"
                                         className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
-                                        id="lastName"
-                                        name="lastName"
+                                        // id="lastName"
+                                        // name="lastName"
                                         />
                                     </div>
                                     <div className="mb-1 sm:mb-2">
                                         <label 
-                                           htmlFor="email"
+                                        //    htmlFor="email"
                                            className="inline-block mb-1 font-medium">
                                             Target Amount
                                         </label>
@@ -111,13 +111,13 @@ const Hero = ({ titleData, createCampaign }) => {
                                         required
                                         type="text"
                                         className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
-                                        id="email"
-                                        name="email"
+                                        // id="email"
+                                        // name="email"
                                         />
                                     </div>
                                     <div className="mb-1 sm:mb-2">
                                         <label 
-                                           htmlFor="email"
+                                        //    htmlFor="email"
                                            className="inline-block mb-1 font-medium">
                                             Deadline
                                         </label>
@@ -132,8 +132,8 @@ const Hero = ({ titleData, createCampaign }) => {
                                         required
                                         type="date"
                                         className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
-                                        id="email"
-                                        name="email"
+                                        // id="email"
+                                        // name="email"
                                         />
                                     </div>
                                     <div className="mt-4 mb-2 sm:mb-4">

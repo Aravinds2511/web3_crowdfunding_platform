@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
-const PopUp = ({ setOpenModal, donate, donateFunction, getDonations}) => {
+const PopUp = ({ setOpenModel, donate, donateFunction, getDonations}) => {
     const [amount, setAmount] = useState("");
     const [allDonationData, setallDonationData] = useState();
 
@@ -30,7 +30,7 @@ const PopUp = ({ setOpenModal, donate, donateFunction, getDonations}) => {
                     <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
                         <h3 className="text-3xl font-semibold">{donate.title}</h3>
                         <button className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
-                                 onClick={() => setOpenModal(false)}>
+                                 onClick={() => setOpenModel(false)}>
                                 <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
                                     x
                                 </span>
@@ -41,7 +41,6 @@ const PopUp = ({ setOpenModal, donate, donateFunction, getDonations}) => {
                         <p className="my-4 text-slate-500 text-lg leading-relaxed">
                             {donate.description}
                         </p>
-
                         <input
                            onChange={(e) => setAmount(e.target.value)}
                            placeholder="amount"
@@ -65,7 +64,7 @@ const PopUp = ({ setOpenModal, donate, donateFunction, getDonations}) => {
                         <button 
                            className="bg-black text-white hover:bg-gray-800 hover:text-white py-2 px-4 transition duration-300 transform hover:scale-110"
                            type="button"
-                           onClick={() => setOpenModal(false)}
+                           onClick={() => setOpenModel(false)}
                         >
                           Close    
                         </button>    
